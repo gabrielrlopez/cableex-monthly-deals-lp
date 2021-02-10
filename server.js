@@ -2,11 +2,12 @@ const express = require('express');
 const sendMail = require('./mail.js')
 const path = require('path');
 const dotenv = require('dotenv');
+dotenv.config({ path:'./config.env' });
 
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
-dotenv.config({ path:'./config.env' });
+
 
 //Data parsing
 app.use(express.urlencoded({extended:false}));
