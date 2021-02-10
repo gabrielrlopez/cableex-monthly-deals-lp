@@ -6,7 +6,7 @@ dotenv.config({ path:'./config.env' });
 const auth = {
     auth: {
         api_key:process.env.MAIL_GUN_API_KEY,
-        domain:process.env.MAIL_GUN_API_DOMAIN,
+        domain:process.env.MAIL_GUN_DOMAIN,
     }
 };
 
